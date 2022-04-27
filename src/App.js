@@ -1,13 +1,24 @@
 import React from 'react';
+import Navbar from './components/navbar';
+import Logo from './components/Logo';
+import Body from './components/body';
 
 //Chakra
-import { Box } from '@chakra-ui/react';
+import { Box, Text, VStack } from '@chakra-ui/react';
 
 function App() {
   return (
-    <Box textAlign="center" fontSize="xl">
-      Edit Me
-    </Box>
+    <VStack spacing={3} p={4}>
+      <Box w="100%">
+        <Navbar />
+      </Box>
+      <Box>
+        <Logo />
+      </Box>
+      <Box>
+        <Body />
+      </Box>
+    </VStack>
   );
 }
 
